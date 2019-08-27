@@ -19,7 +19,20 @@ public:
 	~Matrix() {}
 	
 	Matrix add(Matrix);
-	Matrix mult(Matrix);
+	Matrix multiply(Matrix);
+	Matrix subtract(Matrix other) {
+		return add(other.multiply(-1));
+	}
+	
+	Matrix multiply(int constant) {
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < columns; j++) {
+				matrix[i][j] = constant * matrix[i][j];
+			}
+		}
+		
+		return (*this);
+	}
 
 	void set(int row, int column, int value) {
 		matrix[row][column] = value;
