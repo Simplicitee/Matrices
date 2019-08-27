@@ -1,5 +1,4 @@
 #include "Matrix.h"
-#include <cmath>
 
 Matrix Matrix::add(Matrix other) {
 	if ((this->getRows() != other.getRows()) || (this->getColumns() != other.getColumns())) {
