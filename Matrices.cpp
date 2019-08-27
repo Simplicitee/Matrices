@@ -1,5 +1,5 @@
 // Matrices.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// Example use of Matrix class
 
 #include <iostream>
 #include "Matrix.h"
