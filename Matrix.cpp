@@ -17,7 +17,7 @@ Matrix Matrix::add(Matrix other) {
 	}
 }
 
-Matrix Matrix::mult(Matrix other) {
+Matrix Matrix::multiply(Matrix other) {
 	if (this->getColumns() != other.getRows()) {
 		throw "Incompatible matricies";
 	}
