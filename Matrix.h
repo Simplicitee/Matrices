@@ -33,6 +33,26 @@ public:
 		
 		return (*this);
 	}
+	
+	Matrix transpose() {
+		for (int i = 0; i < rows; i++) {
+			for (int j = 0; j < columns; j++) {
+				if (i == j) {
+					continue;
+				}
+				
+				int value = matrix[i][j];
+				matrix[i][j] = matrix[j][i];
+				matrix[j][i] = value;
+			}
+		}
+		
+		int store = rows;
+		rows = columns;
+		columns = store;
+		
+		return (*this);
+	}
 
 	void set(int row, int column, int value) {
 		matrix[row][column] = value;
