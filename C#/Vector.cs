@@ -38,7 +38,7 @@ namespace VectorSpace {
             double dot = 0;
 
             for (int i = 0; i < this.size; i++) {
-                dot += data[i] + other.data[i];
+                dot += data[i] * other.data[i];
             }
 
             return dot;
