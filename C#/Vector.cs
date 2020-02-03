@@ -1,4 +1,5 @@
 namespace VectorSpace {
+    
 public class Vector {
 
     double[] data;
