@@ -1,5 +1,6 @@
 namespace MatrixSpace {
 using VectorSpace;
+
 public class Matrix {
     double[,] data;
     int rows, cols;
